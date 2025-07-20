@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</br>
+</body>
+</html?
+    </form>
+</div>
+<style>
+    body {
+        font-family: 'Segoe UI', 'Arial', sans-serif;
+        background: linear-gradient(135deg, #39cec6 0%, #d01450 100%);
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        padding: 32px;
+        text-align: center;
+    }
+    h1 {
+        color: #6a82fb;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    .options {
+        margin: 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .option-btn {
+        background: #6a82fb;
+        color: #f7f3f6;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 24px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .option-btn:hover {
+        background: #f50983;
+    }
+    form {
+        margin-top: 24px;
+        text-align: left;
+    }
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+    }
+    input[type="text"] {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #05010100;
+        width: 80%;
+        margin-bottom: 8px;
+    }
+    button[type="submit"] {
+        background: #243bab;
+        color: #f3f2f5;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    button[type="submit"]:hover {
+        background: #cdb9bd;
+    }
+</style>
+<div class="container">
+    <h1>ARMY</h1>
+    <p>ARMY is a platform that helps you express yourself.</p>
+    <p>It is a place where you can share your thoughts, ideas, and creativity with the world.</p>
+    <p>Join us and be part of a community that values self-expression and creativity.</p>
+    <p>We are excited to have you here!</p>
+    <div class="options">
+        <a href="#share" class="option-btn">Share Your Thoughts</a>
+        <a href="#explore" class="option-btn">Explore Ideas</a>
+        <a href="#community" class="option-btn">Join Community</a>
+        <a href="#profile" class="option-btn">Your Profile</a>
+    </div>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="search">Search ARMY or the web:</label>
+        <input type="text" id="search" name="q" placeholder="Type your query...">
+        <button type="submit">Google Search</button>
+    </form>
+    <form action="https://www.bing.com/search" method="get" target="_blank" style="margin-top:10px;">
+        <label for="bing-search">Search with Bing:</label>
+        <input type="text" id="bing-search" name="q" placeholder="Type your query...">
+        <button type="submit">Bing Search</button>
+    </form>
+</div>
+<footer style="text-align:center; margin: 32px 0 16px 0; color: #fff;">
+    &copy; 2024 ARMY. All rights reserved.
+</footer>
+<script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+<!-- Example collections section with contents and editor boxes -->
+<div id="collections" style="background:#f7f3f6; padding:32px; margin:32px auto; max-width:600px; border-radius:16px;">
+    <h2>DIVE WITH US</h2>
+    <div style="margin-bottom:24px;">
+        <h3> Favorite Quotes</h3>
+        <ul>
+            <li>"Creativity takes courage." – Henri Matisse</li>
+            <li>"Express yourself fearlessly."</li>
+        </ul>
+        <textarea rows="3" style="width:100%; border-radius:8px; margin-top:8px;" placeholder="Add your own quote..."></textarea>
+        <button style="margin-top:8px; background:#6a82fb; color:#fff; border:none; border-radius:4px; padding:8px 16px; cursor:pointer;">Add Quote</button>
+    </div>
+    <div style="margin-bottom:24px;"></div>
+        <h3>Ideas to Explore</h3>
+        <ul>
+            <li>Start a community art project</li>
+            <li>Host a virtual brainstorming session</li>
+        </ul>
+        <textarea rows="3" style="width:100%; border-radius:8px; margin-top:8px;" placeholder="Share a new idea..."></textarea>
+        <button style="margin-top:8px; background:#6a82fb; color:#fff; border:none; border-radius:4px; padding:8px 16px; cursor:pointer;">Add Idea</button>
+    </div>
+    <div style="margin-bottom:24px;">
+        <h3>Join Community</h3>
+    <p>Connect with others and share your journey. Click below to join our community page!</p>
+    <a href="community.html" class="option-btn" style="margin-bottom:8px;">Go to Community </a>
+    </div>
+    <div style="margin-bottom:24px;">
+        <h3>Meet Our Users</h3>
+        <ul>
+            <li><a href="user1.html" style="color:#f5f6fa;">@armyloune@gmail.com</a></li>
+        </ul>
+    <div>
+        <h3>Create Your Profile</h3>
+        <form id="profile-form" style="display:flex; flex-direction:column; gap:12px; max-width:400px; margin:auto;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password">
+            <button type="submit" style="background:#6a82fb; color:#fff; border:none; border-radius:4px; padding:8px 16px; cursor:pointer;">Create Profile</button>
+        </form>
+    <div style="margin-bottom:24px;">
+        <h3>Extensions & Resources</h3>
+        <ul>
+            <li>
+                <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener" style="color:#243bab;">
+                    Chrome Extensions
+                </a>
+            </li>
+            <li>
+                <a href="https://addons.mozilla.org/en-US/firefox/" target="_blank" rel="noopener" style="color:#243bab;">
+                    Firefox Add-ons
+                </a>
+            </li>
+            <li>
+                <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home" target="_blank" rel="noopener" style="color:#243bab;">
+                    Edge Extensions
+                </a>
+            </li>
+            <li>
+                <a href="https://www.accessibilitychecker.org/" target="_blank" rel="noopener" style="color:#243bab;">
+                    Accessibility Checker
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3.org/WAI/test-evaluate/" target="_blank" rel="noopener" style="color:#243bab;">
+                    W3C Accessibility Evaluation Tools
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // Accessibility: Focus styles for buttons and links
+        document.querySelectorAll('a, button, input').forEach(el => {
+            el.addEventListener('focus', function() {
+                this.style.outline = '2px solid #243bab';
+            });
+            el.addEventListener('blur', function() {
+                this.style.outline = '';
+            });
+        });
+
+        // Functionality: Add Quote
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (this.textContent.includes('Add Quote')) {
+                    e.preventDefault();
+                    const textarea = this.previousElementSibling;
+                    if (textarea.value.trim()) {
+                        const ul = this.parentElement.querySelector('ul');
+                        const li = document.createElement('li');
+                        li.textContent = textarea.value.trim();
+                        ul.appendChild(li);
+                        textarea.value = '';
+                    }
+                }
+                if (this.textContent.includes('Add Idea')) {
+                    e.preventDefault();
+                    const textarea = this.previousElementSibling;
+                    if (textarea.value.trim()) {
+                        const ul = this.parentElement.querySelector('ul');
+                        const li = document.createElement('li');
+                        li.textContent = textarea.value.trim();
+                        ul.appendChild(li);
+                        textarea.value = '';
+                    }
+                }
+            });
+        });
+
+        // Functionality: Profile Form Submission (demo only)
+        document.getElementById('profile-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Profile created successfully!');
+            this.reset();
+        });
+    </script></div>
